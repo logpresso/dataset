@@ -1,4 +1,4 @@
-Delivered-To: 0x6a6f73687561@77686f.is
+Delivered-To: john.smith@example.com
 Received: by 2002:ac8:4e26:0:b0:3ff:3055:536d with SMTP id d6csp457721qtw;
         Tue, 20 Jun 2023 14:28:32 -0700 (PDT)
 X-Google-Smtp-Source: ACHHUZ7tVF5WC/M8+EqjaV/zE1pudFKzX4jwfgN5z6L/vGoLD1pFwhrlwUDgkg4pre13XwLsi6WF
@@ -29,7 +29,7 @@ ARC-Authentication-Results: i=1; mx.google.com;
 Return-Path: <hello@mail307.stibee.com>
 Received: from mail307.stibee.com (mail307.stibee.com. [3.37.97.77])
         by mx.google.com with UTF8SMTPS id le8-20020a170902fb0800b001b675acd5b1si2502672plb.341.2023.06.20.14.28.31
-        for <0x6a6f73687561@77686f.is>
+        for <john.smith@example.com>
         (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256 bits=128/128);
         Tue, 20 Jun 2023 14:28:32 -0700 (PDT)
 Received-SPF: pass (google.com: domain of hello@mail307.stibee.com designates 3.37.97.77 as permitted sender) client-ip=3.37.97.77;
@@ -45,7 +45,7 @@ DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
  ksxNobhtQ1e0gR7IcggEiLNiIxcMVfg=
 Date: Wed, 21 Jun 2023 06:28:29 +0900
 From: "=?UTF-8?B?66+465287YG066CI7YSw?=" <miraklelab@mk.co.kr>
-To: <0x6a6f73687561@77686f.is>
+To: <john.smith@example.com>
 Message-ID: <1614437.N.1687296509922421733.1129634@mail307.stibee.com>
 Subject: =?UTF-8?B?7YWM7Iqs65287J2YIOyKiO2NvOywqOyggOyZgCDrj4TsmpTtg4DsnZgg7KCE6rOg7LK0IOyghOyngA==?=
 MIME-Version: 1.0
