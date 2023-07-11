@@ -1,6 +1,18 @@
 # dataset
 Public dataset for tutorial
 
+## wp-nginx
+
+### csv
+
+```
+wget url="https://raw.githubusercontent.com/logpresso/dataset/main/wp-nginx.csv"
+| eval line = subarray(split(line, "\n"), 1) | explode line 
+| parsecsv date,login,logtype,referer,remote_host,request,sent,status,user,user_agent
+| rename date as _time | order _time
+| eval remote_host=ip(remote_host), sent=int(sent), status=int(status), _time=date(_time, "EEE MMM dd HH:mm:ss z yyyy")
+```
+
 ## iris
 
 ```
